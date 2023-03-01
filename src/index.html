@@ -6,15 +6,24 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            width: 50%;
         }
     </style>
+    <script>
+        function changeImage() {
+            var img = document.getElementById("image"); 
+            img.src="images/lightbulbon.png";
+            return false; 
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lightbulb</title>
 </head>
-<body>
-    <img src="images/lightbulboff.png" alt="lightbulb off" width="128", height="128">
-    
+<body>    
+    <img id="image" src="images/lightbulboff.png"/>
+    <br><br><br>
+    <button id="clickme" onclick="changeImage();">Click me</button>
 </body>
 </html>
